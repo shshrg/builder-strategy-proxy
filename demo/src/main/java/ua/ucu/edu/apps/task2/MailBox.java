@@ -2,9 +2,12 @@ package ua.ucu.edu.apps.task2;
 
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@NoArgsConstructor
+@NoArgsConstructor @AllArgsConstructor @Getter @Setter
 public class MailBox {
     private List<MailInfo> infos;
     private MailSender sender = new MailSender();
